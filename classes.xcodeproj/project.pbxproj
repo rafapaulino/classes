@@ -21,6 +21,8 @@
 		6A4A06C715E26F72003E03D2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A4A06A515E26F72003E03D2 /* Foundation.framework */; };
 		6A4A06CF15E26F72003E03D2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6A4A06CD15E26F72003E03D2 /* InfoPlist.strings */; };
 		6A4A06D215E26F72003E03D2 /* classesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A4A06D115E26F72003E03D2 /* classesTests.m */; };
+		6A4A06DD15E270EC003E03D2 /* Pessoa.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A4A06DC15E270EC003E03D2 /* Pessoa.m */; };
+		6A4A06E015E284A2003E03D2 /* Motorista.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A4A06DF15E284A2003E03D2 /* Motorista.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +56,10 @@
 		6A4A06CE15E26F72003E03D2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6A4A06D015E26F72003E03D2 /* classesTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = classesTests.h; sourceTree = "<group>"; };
 		6A4A06D115E26F72003E03D2 /* classesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = classesTests.m; sourceTree = "<group>"; };
+		6A4A06DB15E270EC003E03D2 /* Pessoa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Pessoa.h; sourceTree = "<group>"; };
+		6A4A06DC15E270EC003E03D2 /* Pessoa.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Pessoa.m; sourceTree = "<group>"; };
+		6A4A06DE15E284A2003E03D2 /* Motorista.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Motorista.h; sourceTree = "<group>"; };
+		6A4A06DF15E284A2003E03D2 /* Motorista.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Motorista.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +125,10 @@
 				6A4A06B815E26F72003E03D2 /* MainStoryboard_iPad.storyboard */,
 				6A4A06BB15E26F72003E03D2 /* ViewController.h */,
 				6A4A06BC15E26F72003E03D2 /* ViewController.m */,
+				6A4A06DB15E270EC003E03D2 /* Pessoa.h */,
+				6A4A06DC15E270EC003E03D2 /* Pessoa.m */,
+				6A4A06DE15E284A2003E03D2 /* Motorista.h */,
+				6A4A06DF15E284A2003E03D2 /* Motorista.m */,
 				6A4A06AA15E26F72003E03D2 /* Supporting Files */,
 			);
 			path = classes;
@@ -265,6 +275,8 @@
 				6A4A06B015E26F72003E03D2 /* main.m in Sources */,
 				6A4A06B415E26F72003E03D2 /* AppDelegate.m in Sources */,
 				6A4A06BD15E26F72003E03D2 /* ViewController.m in Sources */,
+				6A4A06DD15E270EC003E03D2 /* Pessoa.m in Sources */,
+				6A4A06E015E284A2003E03D2 /* Motorista.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

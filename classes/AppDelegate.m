@@ -7,12 +7,81 @@
 //
 
 #import "AppDelegate.h"
+#import "Pessoa.h"
+#import "Motorista.h"
 
 @implementation AppDelegate
+
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    //criando um ponteiro para essa pessoa/ equivalente a new pessoa
+    Pessoa * p1;
+    //construtor alloc/init
+    //metodo que vai alocar o objeto na memoria e retornar o endereco para ser alocado na variavel ponteiro
+    
+    p1 = [[Pessoa alloc] init]; //alloc reserva o espaco e init inicia o objeto
+    
+    NSLog(@"cansaco inicial: %d", p1.cansaco);
+    
+    //setando os atributos do objeto
+    p1.nome = @"Rafael";
+    
+    //enviando a mensagem ao objeto criado apontado por p1
+    [p1 imprimirTexto];
+    
+    p1.nome = @"Eduardo";
+    [p1 imprimirTexto];
+    
+    
+    Pessoa * p2;
+    p2 = [[Pessoa alloc] init];
+    p2.nome = @"Sem nome";
+    [p2 imprimirTexto];
+    
+    [p1 imprimirNumero:100];
+    
+    [p2 imprimirNumero:2000];
+    
+    int resultadoSoma = [p1 somarNumero:2 comOutroNumero:4];
+    NSLog(@"Resultado da soma %d", resultadoSoma);
+    
+    float rs2 = [p1 somarN1:34 somarN2:41 dividir:25];
+    NSLog(@"Resultado soma e divisao %.2f", rs2);
+    
+    Motorista * m1;
+    m1 = [[Motorista alloc] init];
+    m1.nome = @"jose";
+    m1.cansaco = 1;
+    
+    [m1 dirigirCarro];
+    [m1 dirigirCarro];
+    
+    [m1 somarN1:2 somarN2:4 dividir:6]; //motoristasabe somar pq herdou o metodo da classe pessoa
+    
+    [p2 setNome:@"Maria"]; //e a mesma coisa que p2.nome = @"Maria";
+    
+    //criar uma pessoa usando  construtor com parametros que criamos
+    Pessoa *p3 = [[Pessoa alloc] initWithnome:@"Francisco"];
+    
+    NSLog(@"Nome: %@ - cansaco: %d", p3.nome, p3.cansaco);
+    
+    
+    Pessoa *p4 = [[Pessoa alloc] initWithnome:@"Joao" initWithidade:10];
+    
+    NSLog(@"Nome: %@ - idade: %d", p4.nome, p4.idade);
+    
+    //podemos ter 2 ponteiros para 2 objetos
+    Pessoa *p5 = p4;
+    
+    p5.idade = 61;
+    
+    NSLog(@"Nome: %@ - idade: %d", p4.nome, p4.idade);
+    NSLog(@"Nome: %@ - idade: %d", p5.nome, p5.idade);
+    
+    
+    
     return YES;
 }
 							
